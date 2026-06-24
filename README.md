@@ -32,7 +32,7 @@ No requiere instalación ni registro: la app corre **100% en tu navegador** con 
 
 **ConfiguroWeb**
 - 🌐 Web: [https://configuroweb.com](https://configuroweb.com)
-- 💼 LinkedIn: [/in/jmacuna78](https://www.linkedin.com/in/jmacuna78/)
+- 💼 LinkedIn: [/in/mauricio-sevilla/](https://www.linkedin.com/in/mauricio-sevilla/)
 - 🐙 GitHub: [@configurowebmax](https://github.com/configurowebmax)
 
 ## 🔗 Sistemas relacionados
