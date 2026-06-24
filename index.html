@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estadísticas de Asistencia a Citas | Python · ConfiguroWeb</title>
+  <meta name="description" content="Calcula tasas de asistencia, no-show y cancelación para tu agenda.">
+  <meta property="og:title" content="Estadísticas de Asistencia a Citas · Python">
+  <meta property="og:description" content="Calcula tasas de asistencia, no-show y cancelación para tu agenda.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="assets/style.css">
+  <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>📊 Estadísticas de Asistencia a Citas</h1>
+      <p class="tagline">Mide el % de asistencia, ausencias y cancelaciones</p>
+    </div>
+  </header>
+  <main class="container">
+    <div id="py-loader" class="loader" style="text-align:center;padding:2rem;color:#64748b;">
+      <div class="spinner"></div>
+      <p>Cargando Python (PyScript)…</p>
+    </div>
+    <section id="app" class="app-card hidden">
+      <div class="form-grid">
+        <div class="form-group">
+  <label for="total">📅 Total de citas</label>
+  <input type="number" id="total" min="0" step="0.01" placeholder="Ej: 100">
+  <small>Citas agendadas</small>
+</div>
+        <div class="form-group">
+  <label for="asistieron">✅ Asistieron</label>
+  <input type="number" id="asistieron" min="0" step="0.01" placeholder="Ej: 80">
+  <small>Citas cumplidas</small>
+</div>
+        <div class="form-group">
+  <label for="cancelaron">❌ Cancelaron</label>
+  <input type="number" id="cancelaron" min="0" step="0.01" placeholder="Ej: 10">
+  <small>Canceladas con aviso</small>
+</div>
+      </div>
+      <div class="actions">
+        <button py-click="calcular_handler" class="btn btn-primary">📊 Calcular</button>
+        <button py-click="guardar_datos" class="btn btn-secondary">💾 Guardar datos</button>
+      </div>
+      <div id="resultado" class="result-box hidden" role="status" aria-live="polite"></div>
+    </section>
+    <section class="info-section">
+      <h2>¿Qué es Estadísticas de Asistencia a Citas?</h2>
+      <p>Porcentajes clave para entender la puntualidad de tus clientes.</p>
+      <p>App construida con <strong>Python real</strong> (PyScript) en tu navegador.
+         Tus datos se guardan localmente, nunca salen de tu equipo.</p>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <p>Hecho con 🐍 Python + PyScript por
+        <a href="https://configuroweb.com" target="_blank" rel="noopener">ConfiguroWeb</a> · 2026</p>
+    </div>
+  </footer>
+  <script type="py" src="app.py" async></script>
+  <script>
+    window.addEventListener('py:ready', () => {
+      document.getElementById('py-loader').classList.add('hidden');
+      document.getElementById('app').classList.remove('hidden');
+    });
+  </script>
+</body>
+</html>
