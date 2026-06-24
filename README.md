@@ -1,11 +1,11 @@
-# %%TITULO%% 🐍
+# Estadísticas de Asistencia a Citas 🐍
 
 [![Python](https://img.shields.io/badge/Python-100%25-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![Deploy](https://github.com/configurowebmax/python-estadisticas-asistencia/actions/workflows/pages.yml/badge.svg)](https://github.com/configurowebmax/python-estadisticas-asistencia/actions)
 [![Live Demo](https://img.shields.io/badge/Demo-GitHub%20Pages-success?logo=github&logoColor=white)](https://configurowebmax.github.io/python-estadisticas-asistencia/)
 [![License](https://img.shields.io/badge/Licencia-MIT-blue)](LICENSE)
 
-> %%DESCRIPCION%%
+> Porcentajes clave para entender la puntualidad de tus clientes.
 
 ## 🚀 Probar la aplicación
 
